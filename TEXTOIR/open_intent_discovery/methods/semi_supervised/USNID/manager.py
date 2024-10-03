@@ -110,7 +110,7 @@ class USNIDManager:
             self.logger.info('K-means used %s s', round(end - start, 2))
          
         self.centroids = torch.tensor(km_centroids).to(self.device)
-        pseudo_labels = assign_labels.astype(np.long)
+        pseudo_labels = assign_labels.astype(np.int64)
         
         return outputs, km_centroids, y_true, assign_labels, pseudo_labels
                       
