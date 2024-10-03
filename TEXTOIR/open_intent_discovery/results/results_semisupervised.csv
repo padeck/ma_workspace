@@ -1,0 +1,2 @@
+NMI,ARI,ACC,dataset,method,backbone,known_cls_ratio,labeled_ratio,cluster_num_factor,logger_file_name,seed
+73.57,42.96,56.49,banking,USNID,bert_USNID,0.25,0.1,1.0,USNID_banking_bert_USNID_2024-10-03-17-15-37,0
