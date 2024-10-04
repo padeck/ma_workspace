@@ -1,10 +1,10 @@
 #!/usr/bin bash
 
-for dataset in  'banking' 'clinc'  'stackoverflow'
+for dataset in  'banking' 
 do
-    for cluster_num_factor in 1.0 2.0 3.0 4.0
+    for cluster_num_factor in 1.0 
     do
-        for seed in 0 1 2 3 4 5 6 7 8 9 
+        for seed in 0 
         do 
             python run.py \
             --dataset $dataset \
@@ -19,7 +19,7 @@ do
             --gpu_id '1' \
             --results_file_name 'results_unsupervised.csv' \
             --save_results \
-            --output_dir '/home/sharing/disk2/zhl/TEXTOIR/outputs_un_pre/' 
+            --output_dir '../' 
         done
     done
 done

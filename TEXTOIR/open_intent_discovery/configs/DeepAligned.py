@@ -26,7 +26,7 @@ class Param():
         """
         hyper_parameters = {
 
-            'pretrained_bert_model': "/home/sharing/disk1/pretrained_embedding/bert/uncased_L-12_H-768_A-12/",
+            'pretrained_bert_model': "google/bert_uncased_L-12_H-768_A-12",
             'max_seq_length': None, 
             'pretrain': True,
             'num_pretrain_epochs': 100,
