@@ -72,7 +72,7 @@ class UnsupUSNIDManager:
             
             self.logger.info('Initializing centroids with K-means++...')
             start = time.time()
-            km = KMeans(n_clusters = self.num_labels, n_jobs = -1, random_state=args.seed, init = 'k-means++').fit(feats) 
+            km = KMeans(n_clusters = self.num_labels, random_state=args.seed, init = 'k-means++').fit(feats) 
             
             km_centroids, assign_labels = km.cluster_centers_, km.labels_
             end = time.time()
@@ -81,7 +81,7 @@ class UnsupUSNIDManager:
         elif init == 'centers':
             
             start = time.time()
-            km = KMeans(n_clusters = self.num_labels, n_jobs = -1, random_state=args.seed, init = self.centroids).fit(feats)
+            km = KMeans(n_clusters = self.num_labels, random_state=args.seed, init = self.centroids).fit(feats)
             km_centroids, assign_labels = km.cluster_centers_, km.labels_ 
             end = time.time()
             self.logger.info('K-means used %s s', round(end - start, 2))
@@ -173,7 +173,7 @@ class UnsupUSNIDManager:
         feats = outputs['feats']
         y_true = outputs['y_true']
 
-        km = KMeans(n_clusters = self.num_labels, n_jobs = -1, random_state=args.seed, init = self.centroids).fit(feats) 
+        km = KMeans(n_clusters = self.num_labels, random_state=args.seed, init = self.centroids).fit(feats) 
        
         y_pred = km.labels_
         
