@@ -4,6 +4,7 @@ import numpy as np
 import logging
 import os
 import time 
+import pandas as pd
 
 from torch.utils.data import DataLoader, TensorDataset, RandomSampler
 from sklearn.cluster import KMeans
@@ -61,6 +62,7 @@ class UnsupUSNIDManager:
             args.num_train_epochs, args.lr, args.warmup_proportion)
         
         self.device = model.device
+
     
     def clustering(self, args, init = 'k-means++'):
         
@@ -87,7 +89,23 @@ class UnsupUSNIDManager:
             self.logger.info('K-means used %s s', round(end - start, 2))
 
         self.centroids = km_centroids
-        pseudo_labels = torch.tensor(assign_labels, dtype=torch.long)      
+        pseudo_labels = torch.tensor(assign_labels, dtype=torch.long)     
+
+        input_ids = self.train_outputs['input_ids']  # Or self.test_outputs['input_ids'] if working with test data
+
+        clustering_result = []
+    
+        # Decode the input_ids back to text
+        for idx, (ids, cluster_label) in enumerate(zip(input_ids, assign_labels)):
+            # Convert token ids to text using BERT tokenizer
+            text = self.tokenizer.decode(ids, skip_special_tokens=True)
+            
+            # Print the text along with its assigned cluster
+            print(f"Data point {idx}: Cluster {cluster_label}, Text: {text}")
+            clustering_result.append({'Text': text, 'Cluster': cluster_label})
+
+        df = pd.concat([pd.DataFrame(clustering_result)], ignore_index=True)
+        df.to_csv
         
         return outputs, km_centroids, y_true, assign_labels, pseudo_labels
                       

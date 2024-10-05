@@ -87,11 +87,11 @@ class Param():
             hyper_parameters = {
                 'pretrained_bert_model': 'google/bert_uncased_L-12_H-768_A-12',
                 'max_seq_length': None, 
-                'num_pretrain_epochs': 1100,
+                'num_pretrain_epochs': 1,
                 'num_train_epochs': 1,
                 'num_labels': None,
                 'pretrain': True,
-                'freeze_pretrain_bert_parameters': True,
+                'freeze_pretrain_bert_parameters': False,
                 'freeze_train_bert_parameters': True,
                 'feat_dim': 768,
                 'warmup_proportion': 0.1,

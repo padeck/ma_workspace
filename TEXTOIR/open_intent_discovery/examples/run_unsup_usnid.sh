@@ -1,6 +1,6 @@
 #!/usr/bin bash
 
-for dataset in  'banking' 
+for dataset in  'stackoverflow' 
 do
     for cluster_num_factor in 1.0 
     do

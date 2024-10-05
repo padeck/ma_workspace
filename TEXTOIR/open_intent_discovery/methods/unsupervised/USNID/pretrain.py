@@ -127,10 +127,22 @@ class PretrainUnsupUSNIDManager:
                     loss = loss_contrast
                     
                     if args.grad_clip != -1.0:
-                        torch.nn.utils.clip_grad_value_([param for param in self.model.parameters() if param.requires_grad], args.grad_clip)
+                        params_to_clip = [param for param in self.model.parameters() if param.requires_grad and param.grad is not None]
+                        if params_to_clip:  # Check if there are any valid gradients
+                            print(f"Clipping gradients for {len(params_to_clip)} parameters.")
+                            torch.nn.utils.clip_grad_value_(params_to_clip, args.grad_clip)
+
+
 
                     self.optimizer.zero_grad()
+                    print(f"Loss before backward: {loss.item()}")
+
                     loss.backward()
+                    # Debug: Check which parameters have gradients
+                    for name, param in self.model.named_parameters():
+                        if param.requires_grad and param.grad is None:
+                            print(f"Parameter {name} has no gradient.")
+
                     tr_loss += loss.item()
                     nb_tr_steps += 1
 
