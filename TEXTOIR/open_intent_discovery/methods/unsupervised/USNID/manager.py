@@ -90,26 +90,11 @@ class UnsupUSNIDManager:
 
         self.centroids = km_centroids
         pseudo_labels = torch.tensor(assign_labels, dtype=torch.long)     
-
-        input_ids = self.train_outputs['input_ids']  # Or self.test_outputs['input_ids'] if working with test data
-
-        clustering_result = []
-    
-        # Decode the input_ids back to text
-        for idx, (ids, cluster_label) in enumerate(zip(input_ids, assign_labels)):
-            # Convert token ids to text using BERT tokenizer
-            text = self.tokenizer.decode(ids, skip_special_tokens=True)
-            
-            # Print the text along with its assigned cluster
-            print(f"Data point {idx}: Cluster {cluster_label}, Text: {text}")
-            clustering_result.append({'Text': text, 'Cluster': cluster_label})
-
-        df = pd.concat([pd.DataFrame(clustering_result)], ignore_index=True)
-        df.to_csv
         
         return outputs, km_centroids, y_true, assign_labels, pseudo_labels
                       
-    def train(self, args, data): 
+    def train(self, args, data):
+        print('training')
 
         self.centroids = None
         last_preds = None
@@ -119,6 +104,22 @@ class UnsupUSNIDManager:
             init_mechanism = 'k-means++' if epoch == 0 else 'centers'
             
             outputs, km_centroids, y_true, assign_labels, pseudo_labels = self.clustering(args, init = init_mechanism)
+
+            input_ids = self.train_outputs['input_ids']  # Or self.test_outputs['input_ids'] if working with test data
+
+            clustering_result = []
+        
+            # Decode the input_ids back to text
+            for idx, (ids, cluster_label) in enumerate(zip(input_ids, assign_labels)):
+                # Convert token ids to text using BERT tokenizer
+                text = self.tokenizer.decode(ids, skip_special_tokens=True)
+                
+                # Print the text along with its assigned cluster
+                print(f"Data point {idx}: Cluster {cluster_label}, Text: {text}")
+                clustering_result.append({'Text': text, 'Cluster': cluster_label})
+
+            df = pd.concat([pd.DataFrame(clustering_result)], ignore_index=True)
+            df.to_csv(f"clustering_results_epoch_{epoch}.csv", index=False)
 
             current_preds = pseudo_labels.numpy()
             delta_label = np.sum(current_preds != last_preds).astype(np.float32) / current_preds.shape[0] 
