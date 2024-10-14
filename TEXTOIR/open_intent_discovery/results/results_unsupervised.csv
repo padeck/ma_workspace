@@ -1,0 +1,2 @@
+NMI,ARI,ACC,dataset,method,backbone,known_cls_ratio,labeled_ratio,cluster_num_factor,logger_file_name,seed
+34.51,20.51,38.55,stackoverflow,UnsupUSNID,bert_USNID_Unsup,0.0,0.1,1.0,UnsupUSNID_stackoverflow_bert_USNID_Unsup_2024-10-04-17-38-14,0
