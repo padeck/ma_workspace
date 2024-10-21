@@ -3,4 +3,3 @@ avocado-1.0.2
 /data/*
 Intent_Extraction/03_llm_prompting/api_key.txt
 TEXTOIR/data/avocado
-!/data/manual_labels.csv
