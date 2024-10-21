@@ -3,3 +3,4 @@ logs
 outputs
 cache
 
+!data/manual_labels.csv
