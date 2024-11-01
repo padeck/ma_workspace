@@ -3,9 +3,9 @@ from .unsup_loader import UNSUP_Loader
 
 max_seq_lengths = {     'stackoverflow':45,
                         'clinc':30, 
-                        'banking':55, 
+                        'banking': 55, 
                         'snips': 35,
-                        'avocado': 82,
+                        'avocado': 138,
                     }
                     
 backbone_loader_map = {
@@ -88,11 +88,19 @@ benchmark_labels = {
                         ],
     'snips':
                 [
-                    "AddToPlaylist", "BookRestaurant", "GetWeather", "PlayMusic", "RateBook", 
+                    "AddToPlaylist", "BookRestaurant", "GetWeather", "PlayMusic", "RateBook",
                     "SearchCreativeWork", "SearchScreeningEvent"
                 ],
     'avocado':
                 [
-                    "no_label"
+                    "send_feedback", "send_meeting_request", "send_files",
+                    "send_invoice", "send_presentation", "send_test_results",
+                    "send_resume", "send_helpdesk_request", "resend_virus",
+                    "send_bug_report", "send_contact_info", "send_contract",
+                    "send_updates", "send_excel_spreadsheet", "resend_it",
+                    "send_invite_evite", "offer_help", "send_pictures",
+                    "send_status_report", "send_project_plans", "send_information",
+                    "send_feature_list", "send_logs", "send_gifts", "send_translation",
+                    "send_document_another_version", "send_list", "send_signed_copy"
                 ]
 }
