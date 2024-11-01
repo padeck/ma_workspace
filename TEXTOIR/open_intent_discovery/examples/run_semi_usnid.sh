@@ -1,11 +1,11 @@
 #!/usr/bin bash
 for seed in    0 
 do
-    for dataset in  'banking' 
+    for dataset in   'avocado' 
     do  
-        for known_cls_ratio in  0.25  
+        for known_cls_ratio in  0.25 0.5 0.75 
         do
-            for cluster_num_factor in 1.0 
+            for cluster_num_factor in 2.0 3
             do
                 python run.py \
                 --dataset $dataset \
@@ -21,7 +21,7 @@ do
                 --gpu_id '0' \
                 --results_file_name 'results_semisupervised.csv' \
                 --save_results \
-                --output_dir '../' 
+                --output_dir '..' 
             done
         done
     done
