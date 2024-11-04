@@ -1,0 +1,77 @@
+text	label
+I have sent you my resume .	send_resume_provide
+When I tried calling earlier , I heard a message about sending a fax .	send_fax_provide
+Maybe it makes sense to send high - level or general feedback directly to me , rather than the writers .	send_review_request
+Can you do me a favor and send me the PPT slide you used yesterday ?	send_presentation_request
+I will be sending them our comments by 5 pm EST .	send_review_provide
+If there are no more changes - this is what I 'm sending later today .	send_update_changes_provide
+As we discussed , I will investigate the protocol for sending out presentations .	send_presentation_provide
+We are constantly trying to improve Unimobile for you , so please feel free to send us your recommendations , suggestions or complaints anytime at feedback@unimobile.com .	send_review_request
+Could you please send us the following 3 items : The business / alliance & technical PowerPoint presentations from today 's meeting .	send_presentation_request
+[PERSON] , Could you please send a note to pubs , and R&D explaining the change .	send_update_changes_request
+Here 's what I sent to [PERSON] , which he has included in his e - staff presentations : * * >	send_presentation_provide
+And no more waiting on your fax to go through  eFax does all the work and sends you a receipt for each message successfully sent .	send_fax_request
+Can you send me the slide .	send_presentation_request
+Additionally , I am sending you new index page images , you have old images showing on the website .	send_pictures_provide
+Here is a resume of a candidate that [PERSON] at ESP sent for your position .	send_resume_request
+Feel free to send me any feedback / suggestions that will help make this document more useful for all .	send_review_request
+You were going to send me a presentation next week .	send_presentation_request
+To expedite us sending you a hardcopy of the presentation , we request that you sign and return an NDA ( via fax ) .	send_presentation_request
+Please send me your presentations if you have n't already .	send_presentation_request
+Hi [PERSON] , When I spoke with [PERSON] [PERSON] this morning , he asked that we send him the presentation that includes the technical presentation ahead of time .	send_presentation_provide
+Can you please send this resume to your HR ? < < resume.doc > > Thanks Jyothsna [LOCATION]	send_resume_request
+"[PERSON] [PERSON] [PERSON] Have you been able to pull any hosting "" lesson learned "" slide together - I was hoping to send the slide off to Accenture today ."	send_presentation_provide
+( My dad says he s going back for 2 months next fall  hmmmm ) Also , I am finally sending some pictures to you .	send_pictures_provide
+Since this was the first meeting - I am sending the minutes - I do n't plan to do this on regular basis .	send_meeting_request_provide
+If you change anything please send updates to [PERSON] [PERSON] and [PERSON] [PERSON] .	send_update_changes_request
+I have gone through these changes with [PERSON] , and am sending the revisions to him concurrently .	send_update_changes_provide
+I believe I 've already sent my cut at the presentation to you in a prior emai ; it also resides in the marketing folder in the presentations sub - folder in an eponious file .	send_presentation_provide
+Regretfully , I can not send that slide out at this time as it discusses internal future plans .	send_presentation_provide
+Also , I think [PERSON] sent you a description of a black dress we have ( unfortunately we do n't have a picture ) .	send_pictures_provide
+[PERSON] , I sent an update for an earlier time .	send_update_changes_provide
+Otherwise , I will send out my thoughts in a few weeks and take feedback at that time .	send_review_provide
+I ll send pics  he looks like [PERSON]  .	send_pictures_provide
+fyi - I sent the presentation , excluding slides 21 - 25 , to be included in the conference cd .	send_presentation_provide
+it safe you have done a good job Send some more pictures How is your work going regards to your faher Amma & appa Sweet kisses to adhithi	send_pictures_request
+SendFax Form The SendFax Form is a customized Outlook form that enables you to send faxes from your mail client .	send_fax_request
+I will send a pdf and can fax a version if you like .	send_fax_provide
+We are getting excited ... I 'll send you a picture .	send_pictures_provide
+* If you would like specifications sent to you , please send me your fax number and request the specifications for which product you are interested in .	send_fax_request
+BTW , please send me your bio and resume , the meeting with [PERSON] is set on 12 noon on May 21 .	send_meeting_request_request
+[PERSON] said you will fax me the document first and then you will send me the documents ?	send_fax_request
+Hello [PERSON] , I keep trying to send the presentation [PERSON] presented to the sun lab folks to [PERSON] but since I am working remotely it wo n't go through .	send_presentation_provide
+Please incorporate this matrix into your presentation and send the finalized presentation to me .	send_presentation_request
+Have a great honeymoon and please send us photos .	send_pictures_request
+Send us an email at feedback@anyday.com .	send_review_request
+I also sent a meeting request .	send_meeting_request_provide
+I noticed you sent the photos to our old address .	send_pictures_provide
+I will just send the generalized presentation not customized for GM and then go from there .	send_presentation_provide
+"When you 're ready to send a fax , simply drag and drop these thumbnails to your j2 Fax icon on the [LOCATION] "" Links Bar "" , and you 're done ."	send_fax_request
+Please send me the meeting detail .	send_meeting_request_request
+Send us that photo -- or better yet , e - mail it -- and we 'll select the best ones to be shared with our members in our upcoming Home deliveries .	send_pictures_request
+I sent off my resume ...	send_resume_provide
+I will send you a NDA , and follow that with additional material on our company , including the presentation we discussed as part of our visit to our offices .	send_presentation_provide
+[PERSON] , For some reason , I could n't send the presentation to you via email , so I dropped it in the ostaff folder ( commsmtgjpn10_9 ) .	send_presentation_provide
+I keep forgetting to send resume to you	send_resume_provide
+Can you send me his resume ? Thanks !	send_resume_request
+The call in # is 1888 859 9465 ; passcode : 436239 # Please kindly send me your presentation materials prior to this call .	send_presentation_request
+Stuart ; Could you please send me your resume so we can write a bio for your review for the website .	send_resume_request
+Here 's how to send your pictures :	send_pictures_request
+I am sending the email example and the slide presentation in a few moments .	send_presentation_provide
+Please send me your latest / updated resumes if you are still looking for .	send_resume_request
+Send resumes ( or questions ) to linda_liu@allegis.com and I will forward it to the appropriate person or feel free to call at 415 - 355 - 5823 .	send_resume_provide
+You could either send me a fax or an email with a file or screen shots .	send_fax_request
+R&D folks will help by creating demos and suggest slide content for [PERSON] , though [PERSON] is the overall presenter ( i.e. [PERSON] and invite engineers up to help but [PERSON] will create the overall presentation and facilitate the meeting ) -------------------------------------------------------------------------------------------------------------------------------- Rajeev will send out specifics ; please support both [PERSON] in her presentation to EMAS on Monday and [PERSON] in his presentation to AE , Marketing and SEs on Thursday .	send_presentation_request
+And please send pictures .	send_pictures_request
+I 'll send more recent pictures later this week .	send_pictures_provide
+[PERSON] , Please send the latest FS incorporating all comments .	send_review_request
+I sent you a meeting request ...	send_meeting_request_provide
+Jan .. 6.04:38:16.IST.2001 - - Hi [PERSON] , I 'm sending you the resume .	send_resume_provide
+I 've sent you a meeting request for We d.	send_meeting_request_provide
+[PERSON] [PERSON] [PERSON] I just sent you a fax .	send_fax_provide
+Can I send you my resume to forward ? Thanks .	send_resume_provide
+I am sending the Department Tress structure by fax soon . Thanks , Kinjal	send_fax_provide
+For back up purposes , I am sending the presentation to you guys as well - just in case .	send_presentation_provide
+I have sent a request to recruiting to set a meeting with [PERSON] , [PERSON] and [PERSON] .	send_meeting_request_provide
+I will send out another notice on the actual meeting time .	send_meeting_request_provide
+If you have not sent your slides to me , please do so .	send_presentation_request

@@ -1,11 +1,11 @@
 #!/usr/bin bash
-for seed in    0 
+for seed in    0 1
 do
-    for dataset in   'avocado' 
+    for dataset in   'send_new_refined_request_provide' 
     do  
-        for known_cls_ratio in  0.25 0.5 0.75 
+        for known_cls_ratio in  0.25 0.5 0.75 1.0
         do
-            for cluster_num_factor in 2.0 3
+            for cluster_num_factor in 1.0 2.0 3.0
             do
                 python run.py \
                 --dataset $dataset \

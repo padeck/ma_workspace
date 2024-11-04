@@ -1,0 +1,18 @@
+text	label
+[PERSON] , Yes , please send these presentations to [PERSON] and myself and let us know when you need us to get back to you .	send_presentation_request
+Do you really want me to start sending M emails with kitty pictures ?	send_pictures_request
+[PERSON] , Could you please set up a 30 minute meeting with [PERSON] , [PERSON] , [PERSON] [PERSON] , and myself tomorrow ( Thursday ) if possible , to discuss whether Professional Services or IT needs to send someone to ThinAir Apps training ? Thanks , [PERSON] .	send_meeting_request_request
+* If you would like specifications sent to you , please send me your fax number and request the specifications for which product you are interested in .	send_fax_request
+Please send me your latest / updated resumes if you are still looking for .	send_resume_request
+Send us your best beach photograph , and we 'll select a few for publication in our next issue .	send_pictures_request
+[PERSON] , Please send the resume ' to me via e - mail .	send_resume_request
+send me your resume Om	send_resume_request
+The call in # is 1888 859 9465 ; passcode : 436239 # Please kindly send me your presentation materials prior to this call .	send_presentation_request
+[PERSON] , Please continue to send the customer updates as usual .	send_update_changes_request
+Send your feedback to me no later than 2:00 PM tomorrow .	send_review_request
+Send us an email at feedback@anyday.com .	send_review_request
+Please send me your fax number .	send_fax_request
+[PERSON] , please send the presentation .	send_presentation_request
+Specifically , use Reply All when sending any correspondence to me about your presentation , that will make communications between all of the session participants much more efficient .	send_presentation_request
+Set the subject as : QUEUE Return a list of faxes queued for sending HISTORY Return a list of fax succeses and failures STATUS x.y.z Returns information of fax entry x.y.z HELP This text Using the Customized Outlook Forms Below is a brief description of the Outlook forms povided with [PERSON] [PERSON] [PERSON] These may or may not be available to you , depending if your System Administrator has installed these forms on your Exchange Server .	send_fax_request
+Please send your updated presentation to me directly by end of day Monday at the latest .	send_presentation_request

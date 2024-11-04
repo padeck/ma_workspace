@@ -6,6 +6,10 @@ max_seq_lengths = {     'stackoverflow':45,
                         'banking': 55, 
                         'snips': 35,
                         'avocado': 138,
+                        'send_new': 147,
+                        'send_new_refined': 147,
+                        'send_new_refined_request': 147,
+                        'send_new_refined_request_provide': 147,
                     }
                     
 backbone_loader_map = {
@@ -102,5 +106,34 @@ benchmark_labels = {
                     "send_status_report", "send_project_plans", "send_information",
                     "send_feature_list", "send_logs", "send_gifts", "send_translation",
                     "send_document_another_version", "send_list", "send_signed_copy"
-                ]
+                ],
+    'send_new':
+                [
+                    'send_review', 'send_presentation', 'send_fax',
+                    'send_update_changes', 'send_pictures', 'send_meeting_request',
+                    'send_resume'
+                ],
+    'send_new_refined':
+                [
+                    'send_review', 'send_presentation', 'send_fax',
+                    'send_update_changes', 'send_pictures', 'send_meeting_request',
+                    'send_resume'
+                ],
+    'send_new_refined_request':
+                [
+                    'send_review_request', 'send_presentation_request',
+                    'send_fax_request', 'send_update_changes_request',
+                    'send_pictures_request', 'send_meeting_request_ambiguous',
+                    'send_meeting_request_request', 'send_resume_request'
+                ],
+    'send_new_refined_request_provide':
+                [
+                    'send_review_provide', 'send_review_request',
+                    'send_presentation_provide', 'send_presentation_request',
+                    'send_fax_provide', 'send_fax_request',
+                    'send_update_changes_provide', 'send_update_changes_request',
+                    'send_pictures_request', 'send_pictures_provide',
+                    'send_meeting_request_provide', 'send_meeting_request_request',
+                    'send_resume_request', 'send_resume_provide'
+                ],
 }
