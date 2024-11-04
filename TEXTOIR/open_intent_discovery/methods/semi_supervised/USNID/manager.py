@@ -214,7 +214,7 @@ class USNIDManager:
             save_model(self.model, args.model_output_dir)
               
     def test(self, args, data):
-        
+        test_results = {}
         outputs = self.get_outputs(args, mode = 'test', model = self.model)
         feats = outputs['feats']
         y_true = outputs['y_true']
