@@ -280,3 +280,17 @@ def split_dataframes(df, action_object_pairs):
     df_remaining = df[~mask].copy()
     
     return df_intent, df_remaining
+
+
+def create_count_df(df):
+    all_strings = [item for sublist in df['action_object_pairs'] for item in sublist]
+    all_strings = [s.lower() for s in all_strings]
+    # Step 2: Count occurrences of each full string
+    full_string_counts = Counter(all_strings)
+
+    # Step 3: Convert the Counter to a DataFrame and sort by counts in descending order
+    counts_df = pd.DataFrame(full_string_counts.items(), columns=['action_object_pairs', 'Count']).sort_values(by='Count', ascending=False)
+
+    # Reset index for neatness (optional)
+    counts_df = counts_df.reset_index(drop=True)
+    return counts_df
