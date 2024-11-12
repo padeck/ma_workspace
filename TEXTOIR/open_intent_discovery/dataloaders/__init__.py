@@ -10,6 +10,8 @@ max_seq_lengths = {     'stackoverflow':45,
                         'send_new_refined': 147,
                         'send_new_refined_request': 147,
                         'send_new_refined_request_provide': 147,
+                        'feedback_meeting_problem': 326,
+                        'feedback_meeting_problem_even': 326,
                     }
                     
 backbone_loader_map = {
@@ -135,5 +137,13 @@ benchmark_labels = {
                     'send_pictures_request', 'send_pictures_provide',
                     'send_meeting_request_provide', 'send_meeting_request_request',
                     'send_resume_request', 'send_resume_provide'
+                ],
+    'feedback_meeting_problem':
+                [
+                    'MakeChanges', 'RequestFeedback', 'PlanMeeting', 'OfferHelp'
+                ],
+    'feedback_meeting_problem_even':
+                [
+                    'MakeChanges', 'RequestFeedback', 'PlanMeeting', 'OfferHelp'
                 ],
 }

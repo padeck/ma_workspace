@@ -1,7 +1,7 @@
 #!/usr/bin bash
 for seed in    0 1
 do
-    for dataset in   'meeting' 
+    for dataset in   'feedback_meeting_problem' 'feedback_meeting_problem_even'
     do  
         for known_cls_ratio in  0.25 0.5 0.75 1.0
         do

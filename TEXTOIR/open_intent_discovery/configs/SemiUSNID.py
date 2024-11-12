@@ -193,6 +193,62 @@ class Param():
                 'test_batch_size': 64,
                 'wait_patient': 10,
             }
+        elif args.dataset == 'feedback_meeting_problem':
+            print("==============feedback_meeting_problem config")
+            hyper_parameters = {
+                'pretrained_bert_model': 'google/bert_uncased_L-12_H-768_A-12',
+                'max_seq_length': None, 
+                'num_pretrain_epochs': 1,
+                'num_train_epochs': 1,
+                'num_labels': None,
+                'pretrain': True,
+                'freeze_pretrain_bert_parameters': True,
+                'freeze_train_bert_parameters': False,
+                'feat_dim': 768,
+                'warmup_proportion': 0.1,
+                'lr_pre': 5e-5,
+                'lr': 1e-5,
+                'loss_fct': 'CrossEntropyLoss',
+                'pretrain_temperature': 0.07,
+                'train_temperature': 0.05,
+                're_prob': 0.4,
+                'activation': 'tanh',
+                'tol': 0.0005,
+                'grad_clip': 1.0,
+                'train_batch_size': 128,
+                'pretrain_batch_size': 128,
+                'eval_batch_size': 64,
+                'test_batch_size': 64,
+                'wait_patient': 10,
+            }
+        elif args.dataset == 'feedback_meeting_problem_even':
+            print("==============feedback_meeting_problem_even config")
+            hyper_parameters = {
+                'pretrained_bert_model': 'google/bert_uncased_L-12_H-768_A-12',
+                'max_seq_length': None, 
+                'num_pretrain_epochs': 1,
+                'num_train_epochs': 1,
+                'num_labels': None,
+                'pretrain': True,
+                'freeze_pretrain_bert_parameters': True,
+                'freeze_train_bert_parameters': False,
+                'feat_dim': 768,
+                'warmup_proportion': 0.1,
+                'lr_pre': 5e-5,
+                'lr': 1e-5,
+                'loss_fct': 'CrossEntropyLoss',
+                'pretrain_temperature': 0.07,
+                'train_temperature': 0.05,
+                're_prob': 0.4,
+                'activation': 'tanh',
+                'tol': 0.0005,
+                'grad_clip': 1.0,
+                'train_batch_size': 128,
+                'pretrain_batch_size': 128,
+                'eval_batch_size': 64,
+                'test_batch_size': 64,
+                'wait_patient': 10,
+            }
         elif args.dataset == 'clinc':
             print("==============clinc config")
             hyper_parameters = {
