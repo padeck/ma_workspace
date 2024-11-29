@@ -4,3 +4,8 @@ avocado-1.0.2
 Intent_Extraction/03_llm_prompting/api_key.txt
 TEXTOIR/data/avocado
 !/data/manual_labels.csv
+**/api_key.txt
+*.parquet
+*.tsv
+*.csv
+/obsolete
