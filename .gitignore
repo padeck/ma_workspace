@@ -9,3 +9,4 @@ TEXTOIR/data/avocado
 *.tsv
 *.csv
 /obsolete
+**/secret_api_key.txt
