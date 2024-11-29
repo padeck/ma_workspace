@@ -1,6 +1,7 @@
 import torch
 import logging
-from transformers import AdamW, get_linear_schedule_with_warmup
+from torch.optim import AdamW
+from transformers import get_linear_schedule_with_warmup
 from .utils import freeze_bert_parameters, freeze_bert_parameters_KCL
 from .__init__ import backbones_map
 
@@ -20,7 +21,7 @@ class ModelManager:
             {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
         ]
         
-        optimizer = AdamW(optimizer_grouped_parameters, lr = lr, correct_bias=False)
+        optimizer = AdamW(optimizer_grouped_parameters, lr = lr)
         num_warmup_steps= int(num_train_examples * num_train_epochs * warmup_proportion / train_batch_size)
         
         scheduler = get_linear_schedule_with_warmup(optimizer,

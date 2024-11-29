@@ -2,10 +2,12 @@ from .bert_loader import BERT_Loader
 from .llama_loader import LLAMA_Loader
 
 max_seq_lengths = {
-                        'stackoverflow':45,
-                        'banking':55, 
-                        'oos':30, 
-                        'snips':35
+                        'stackoverflow': 45,
+                        'banking': 55,
+                        'oos': 30,
+                        'snips': 35,
+                        'feedback_meeting_problem_even': 326,
+                        'send_new_refined_request': 147,
                     }
 
 
@@ -85,5 +87,16 @@ benchmark_labels = {
                 [
                     "AddToPlaylist", "BookRestaurant", "GetWeather", "PlayMusic", "RateBook", 
                     "SearchCreativeWork", "SearchScreeningEvent"
-                ]
+                ],
+    'feedback_meeting_problem_even':
+                [
+                    'MakeChanges', 'RequestFeedback', 'PlanMeeting', 'OfferHelp'
+                ],
+    'send_new_refined_request':
+                [
+                    'send_review_request', 'send_presentation_request',
+                    'send_fax_request', 'send_update_changes_request',
+                    'send_pictures_request', 'send_meeting_request_ambiguous',
+                    'send_meeting_request_request', 'send_resume_request'
+                ],
 }

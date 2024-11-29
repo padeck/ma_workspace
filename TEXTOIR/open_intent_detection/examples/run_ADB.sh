@@ -1,12 +1,12 @@
 #!/usr/bin bash
 
-for dataset in 'banking' 'oos' 'stackoverflow'
+for dataset in  'send_new_refined_request'
 do
-    for known_cls_ratio in 0.25 0.5 0.75
+    for known_cls_ratio in 0.25 0.5 0.75 1.0
     do
         for labeled_ratio in 1.0
         do
-            for seed in 0 1 2 3 4 5 6 7 8 9
+            for seed in 0
             do 
                 python run.py \
                 --dataset $dataset \
@@ -22,7 +22,8 @@ do
                 --pretrain \
                 --results_file_name 'results_ADB.csv' \
                 --save_results \
-                --save_model
+                --output_dir '..'
+                #--save_model
             done
         done
     done

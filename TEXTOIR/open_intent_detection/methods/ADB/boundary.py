@@ -23,8 +23,8 @@ class BoundaryLoss(nn.Module):
         x = pooled_output
         
         euc_dis = torch.norm(x - c,2, 1).view(-1)
-        pos_mask = (euc_dis > d).type(torch.cuda.FloatTensor)
-        neg_mask = (euc_dis < d).type(torch.cuda.FloatTensor)
+        pos_mask = (euc_dis > d).type(torch.FloatTensor)
+        neg_mask = (euc_dis < d).type(torch.FloatTensor)
         
         pos_loss = (euc_dis - d) * pos_mask
         neg_loss = (d - euc_dis) * neg_mask

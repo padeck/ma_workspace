@@ -1,11 +1,11 @@
 #!/usr/bin bash
-for seed in    0 1
+for seed in    0 
 do
-    for dataset in   'feedback_meeting_problem' 'feedback_meeting_problem_even'
+    for dataset in   'clustered' #'banking' #'feedback_meeting_problem_even' #'feedback_meeting_problem' 
     do  
         for known_cls_ratio in  0.25 0.5 0.75 1.0
         do
-            for cluster_num_factor in 1.0 2.0 3.0
+            for cluster_num_factor in 1.0 #2.0 3.0
             do
                 python run.py \
                 --dataset $dataset \

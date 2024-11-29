@@ -3,11 +3,13 @@ import numpy as np
 import torch
 import os
 import csv
+csv.field_size_limit(10000000)  # Increase limit to handle large fields
 import sys
 import logging
 from transformers import BertTokenizer, AutoTokenizer
 from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler, TensorDataset)
 from sentence_transformers import SentenceTransformer
+
 
 class BERT_Loader:
     
